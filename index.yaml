@@ -2,12 +2,12 @@ apiVersion: v1
 entries:
   digital-showroom:
   - apiVersion: v1
-    created: "2023-03-01T13:42:43.36904+05:30"
+    created: "2023-03-01T13:53:33.423236+05:30"
     description: digital-showroom
     digest: 07885f1044afea0e66a560c8c160ec82658e228816c814c591a38057521dbaef
     name: digital-showroom
     type: application
     urls:
-    - https://github.com/hackerstown27/helmchart.git/digital-showroom-1.0.0.tgz
+    - https://github.com/hackerstown27/helmchart/digital-showroom-1.0.0.tgz
     version: 1.0.0
-generated: "2023-03-01T13:42:43.363571+05:30"
+generated: "2023-03-01T13:53:33.415202+05:30"
