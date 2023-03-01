@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: {{ .Values.service }}
+  name: {{ .Values.service }}
+spec:
+  revisionHistoryLimit: 0
+  selector:
+    matchLabels:
+      app: {{ .Values.service }}
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.service }}
+    spec:
+      containers:
+        - image: asia.gcr.io/dotpe-staging/{{ .Values.service }}:IMG_TAG
+          imagePullPolicy: Always
+          env: []
+          name: {{ .Values.service }}
