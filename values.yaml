@@ -1,0 +1,17 @@
+application: dot-admin
+environment: staging1
+deployment: 
+  replicas: 1
+  logMountPath: /var/log/containers/stage1/dot-admin
+  logHostPath: /var/log/containers/stage1/dot-admin
+  imageTAG: dot-admin-stage1-4-20230424110343
+  imageRepo: dot-admin
+  containerPort: 7630
+  env:
+    - name: LOGDIR
+      value: /var/log/containers/stage1/dot-admin
+    - name: ENV
+      value: stage
+service:
+  targetPort: 7630
+  port: 7630
